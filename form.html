@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar bikin form</title>
+</head>
+<body>
+	<form method="post" action="">
+		<fieldset>
+			<legend>General</legend>
+			<label for="user" required>Username</label><br/>
+			<input type="text" name="user" id="user"/>
+			<input type="text" name="user" id="user" disabled value="aaaa" />
+			<input type="text" name="user" id="user" readonly value="aaaa" />
+			<input type="text" name="user" id="user" maxlength="5" />
+			<br/>
+			<label for="psw">Password</label><br/>
+			<input type="password" name="psw" id="psw"/>
+		</fieldset>
+		<fieldset>
+			<legend>Additional</legend>
+			<label>Jenis kelamin</label><br/>
+			<label><input type="radio" name="gender" checked/>Male</label>
+			<label><input type="radio" name="gender" />Female</label>
+			<br/>
+			<label>Alamat</label><br/>
+			<textarea name="addr" id="addr"></textarea>
+			<br/>
+			<label>Negara</label><br/>
+			<select>
+				<option>Indonesia</option>
+				<option>Singapore</option>
+				<option selected>Malaysia</option>
+			</select>
+			<br/>
+			<label>Hobi</label><br/>
+			<select multiple>
+				<option>Berenang</option>
+				<option>Baca</option>
+				<option>Nonton</option>
+				<option>Koding</option>
+			</select>
+			<br/>
+			<label>Tanggal lahir</label>
+			<input type="date" name="dob" />
+			<br/>
+			<label>Warna kesukaan</label>
+			<input type="color" name=""/>
+			<label>Waktu</label>
+			<input type="time" name=""/>
+		</fieldset>
+		<input type="checkbox" name="chk"/> Saya setuju peraturan
+		<br/>
+		<input type="button" value="Button" />
+		<input type="submit" value="Submit" />
+		<input type="reset" value="Reset" />
+	</form>
+</body>
+</html>
